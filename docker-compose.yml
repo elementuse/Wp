@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  wp.sampleapp:
+    image: ${DOCKER_REGISTRY}wpsampleapp
+    build:
+      context: .
+      dockerfile: test/wp.SampleApp/Dockerfile
